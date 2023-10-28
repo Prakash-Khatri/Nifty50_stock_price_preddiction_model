@@ -1,4 +1,4 @@
-![MasterHead](https://cdn.dribbble.com/users/1330777/screenshots/15577460/media/63bebb993ca3416be861f0953182a9d6.gif)
+![MasterHead](https://cdn.dribbble.com/users/481105/screenshots/4328271/media/724e29cf45eb1b67e9ee5fee111ca9d8.gif)
 
 # Introduction:
 The Nifty 50, often simply referred to as the Nifty, is the flagship stock market index of the National Stock Exchange of India (NSE). It comprises the top 50 actively traded stocks from various sectors, representing a diversified and comprehensive reflection of the Indian equity market. Investors and analysts closely monitor the Nifty 50 to gauge the overall market sentiment, economic health, and investment opportunities in India.
@@ -112,7 +112,8 @@ However, it's crucial to acknowledge that while ML models can offer powerful pre
 ---
 
 # Problems Faced ❓
-While using web automation, I encountered an issue on the Yahoo Finance website where sometimes I successfully sent keys to the search bar, but the search results didn't appear. This problem occurred randomly, causing the loop to exit with an error. To handle this, I implemented a try and except block. When the error occurred, the keys were appended to a new list named 'not_retrieved.' After completing the for loop, I created a new loop in a separate cell to handle the keys in the 'not_retrieved' list. In this loop, I used a while loop with the condition that the length of the 'not_retrieved' list was not equal to zero. I always used the very first key from the list, implementing the try and except method. If the iteration was successful, the file was downloaded, and the first key was removed, automatically replaced by the next key. This process reduced the length of the while loop by -1 since an element was deducted from the list. By doing so I was finally able to download all the files
+While using web automation, I encountered an issue on the Yahoo Finance website where sometimes I successfully sent keys to the search bar, but the search results didn't appear. This problem occurred randomly, causing the loop to exit with an error. To handle this, I implemented a try and except block. When the error occurred, the keys were appended to a new list named 'not_retrieved.' After completing the for loop, I created a new loop in a separate cell to handle the keys in the 'not_retrieved' list. In this loop, I used a while loop with the condition that the length of the 'not_retrieved' list was not equal to zero. I always used the very first key from the list, implementing the try and except method. If the iteration was successful, the file was downloaded, and the first key was removed, automatically replaced by the next key. This process reduced the length of the while loop by -1 since an element was deducted from the list. By doing so I was finally able to download all the files.
+![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/f41b8a4e-7b32-4ff8-b826-0e4f436f506e)
 
 ---
 
