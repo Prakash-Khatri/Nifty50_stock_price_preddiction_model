@@ -33,7 +33,7 @@ The "Linear Regression Model for Stock Price Predictions" project focuses on cre
    - Once the linear regression model demonstrates satisfactory performance, save the trained model to a file using serialization techniques. Common formats include pickle files in Python or joblib files, preserving the model's state and parameters.
 
 7. Real-time Predictions:
-  - Implement a mechanism to load the saved model and use it for real-time predictions. Users can input relevant features (such as current trading volume and historical prices), and the model will output the predicted stock price.
+   - Implement a mechanism to load the saved model and use it for real-time predictions. Users can input relevant features (such as current trading volume and historical prices), and the model will output the predicted stock price.
 
 ---
 
