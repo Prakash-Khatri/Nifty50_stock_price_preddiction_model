@@ -96,7 +96,7 @@ The "Linear Regression Model for Stock Price Predictions" project focuses on cre
 Here are the evaluation metrices to check the accuracy of the model
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/68f4be18-9999-48dc-89b1-65f2b680e3eb)
 
-## Storing the Machine Learning Model
+## Storing the Machine Learning Model*
 - The pickle library in Python is commonly used for serializing and deserializing data. When applied to saving stock data, it allows you to store complex data structures, such as dictionaries or lists containing stock information, into a binary file. This serialized data can be easily saved and loaded later, enabling efficient storage and retrieval of stock-related information within Python programs.This means you can save your trained ML model along with stock data in a file for future use. This approach ensures that your model and data are stored in a compact binary format, enabling easy retrieval and deployment when needed.
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/a3ea3144-843d-4531-bc4c-d640d06c37b0)
 
@@ -147,3 +147,7 @@ Machine learning algorithms can be used to detect anomalies in stock behavior. T
 
 5. Portfolio Optimization:
 ML models can assist in optimizing investment portfolios. By considering multiple factors and constraints, these models can suggest the most balanced and profitable portfolio for investors.
+
+---
+
+##### _*For the purpose of loading the data from pickle library the data has to be passes with few steps mentioned in the notebook_
