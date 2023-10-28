@@ -15,19 +15,19 @@ The "Linear Regression Model for Stock Price Predictions" project focuses on cre
 
 #### Key Steps in the Project:
 1. Data Collection:
-  - Gather historical stock price data, including features like opening price, closing price, trading volume, and any other relevant metrics.
+   - Gather historical stock price data, including features like opening price, closing price, trading volume, and any other relevant metrics.
 
 2. Data Preprocessing:
-  - Clean and preprocess the collected data, handling missing values and outliers. Prepare the data in a format suitable for training a linear regression model, ensuring numerical features are normalized if needed.
+   - Clean and preprocess the collected data, handling missing values and outliers. Prepare the data in a format suitable for training a linear regression model, ensuring numerical features are normalized if needed.
 
 3. Feature Selection:
-  - Identify relevant features that influence stock prices. Common features include historical prices, trading volume, moving averages, and technical indicators. Select features that have significant correlations with stock prices.
+   - Identify relevant features that influence stock prices. Common features include historical prices, trading volume, moving averages, and technical indicators. Select features that have significant correlations with stock prices.
 
 4. Linear Regression Model:
-  - Implement a linear regression model using libraries like scikit-learn in Python. Train the model on the preprocessed historical data, mapping features to stock prices using linear relationships.
+   - Implement a linear regression model using libraries like scikit-learn in Python. Train the model on the preprocessed historical data, mapping features to stock prices using linear relationships.
 
 5. Model Training and Evaluation:
-  - Split the data into training and testing sets. Train the linear regression model using the training data and evaluate its performance on the test data. Utilize metrics like Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) to assess the model's accuracy.
+   - Split the data into training and testing sets. Train the linear regression model using the training data and evaluate its performance on the test data. Utilize metrics like Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) to assess the model's accuracy.
 
 6. Saving the Model:
    - Once the linear regression model demonstrates satisfactory performance, save the trained model to a file using serialization techniques. Common formats include pickle files in Python or joblib files, preserving the model's state and parameters.
@@ -41,24 +41,24 @@ The "Linear Regression Model for Stock Price Predictions" project focuses on cre
 
 ## Data Scrapping ⛏️
 1. Company Names:
-  - Initially, the names of companies constituting the Nifty 50 index were manually downloaded from the official Nifty 50 website. This curated list served as the foundation for subsequent automated data extraction procedures.
-  - After importing the dataset into a file, the project further processed the information by creating a list of shares from the file. To optimize search operations on the Yahoo Finance platform, ".NS" was appended to each share name in the list. This modified list was then used as input to send keys into the search bar, streamlining the automation process for retrieving specific share data.
+   - Initially, the names of companies constituting the Nifty 50 index were manually downloaded from the official Nifty 50 website. This curated list served as the foundation for subsequent automated data extraction procedures.
+   - After importing the dataset into a file, the project further processed the information by creating a list of shares from the file. To optimize search operations on the Yahoo Finance platform, ".NS" was appended to each share name in the list. This modified list was then used as input to send keys into the search bar, streamlining the automation process for retrieving specific share data.
 
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/eb766e5f-b8cd-40db-9193-9c3c1c2224c0)
 
 2. Automated Data Retrieval from Yahoo Finance:
-  - Selenium and WebDriver automation tools were employed to navigate the Yahoo Finance website. The automation script identified the search box, entered the names of individual companies obtained from the manually downloaded list, and executed a search operation. Upon accessing the designated share data pages, the process continued as follows.
+   - Selenium and WebDriver automation tools were employed to navigate the Yahoo Finance website. The automation script identified the search box, entered the names of individual companies obtained from the manually downloaded list, and executed a search operation. Upon accessing the designated share data pages, the process continued as follows.
 
 3.  Accessing Historical Data:
-  - Once on the specific share's data page, the automation script identified and interacted with the 'Historical Data' tab. This tab provided access to the historical performance metrics of the chosen share.
+   - Once on the specific share's data page, the automation script identified and interacted with the 'Historical Data' tab. This tab provided access to the historical performance metrics of the chosen share.
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/2559210c-cabe-4323-9a88-702dc0fc2e94)
 
 4.  Selecting Time Span:
-  - The automation tool interacted with the drop-down menu to select the desired time span, enabling customization of the data extraction process. A specific time frame, such as 5 years, was chosen to gather comprehensive historical data for analysis.
+   - The automation tool interacted with the drop-down menu to select the desired time span, enabling customization of the data extraction process. A specific time frame, such as 5 years, was chosen to gather comprehensive historical data for analysis.
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/c280a8c9-d334-4b0c-a376-2884313df1d0)
 
 5. Download of CSV Files:
-  - Post selecting the appropriate time span, the automation tool located and activated the download button. This action initiated the download of a CSV (Comma-Separated Values) file containing the historical data of the particular share over the specified 5-year period.
+   - Post selecting the appropriate time span, the automation tool located and activated the download button. This action initiated the download of a CSV (Comma-Separated Values) file containing the historical data of the particular share over the specified 5-year period.
 
 #### _Following is the code for Data Scrapping:_
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/42df4986-7a5b-4efc-b8a9-adf966284cf3)
