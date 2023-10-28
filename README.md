@@ -111,6 +111,11 @@ However, it's crucial to acknowledge that while ML models can offer powerful pre
 
 ---
 
+# Problems Faced ❓
+While using web automation, I encountered an issue on the Yahoo Finance website where sometimes I successfully sent keys to the search bar, but the search results didn't appear. This problem occurred randomly, causing the loop to exit with an error. To handle this, I implemented a try and except block. When the error occurred, the keys were appended to a new list named 'not_retrieved.' After completing the for loop, I created a new loop in a separate cell to handle the keys in the 'not_retrieved' list. In this loop, I used a while loop with the condition that the length of the 'not_retrieved' list was not equal to zero. I always used the very first key from the list, implementing the try and except method. If the iteration was successful, the file was downloaded, and the first key was removed, automatically replaced by the next key. This process reduced the length of the while loop by -1 since an element was deducted from the list. By doing so I was finally able to download all the files
+
+---
+
 # Learnings
 1. Data Quality is Paramount:
 The accuracy and reliability of the model heavily depend on the quality of the input data. Ensuring clean, accurate, and up-to-date data is crucial for meaningful predictions.
