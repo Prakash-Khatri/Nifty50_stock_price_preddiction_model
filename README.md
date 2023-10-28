@@ -49,11 +49,11 @@ The "Linear Regression Model for Stock Price Predictions" project focuses on cre
 2. Automated Data Retrieval from Yahoo Finance:
    - Selenium and WebDriver automation tools were employed to navigate the Yahoo Finance website. The automation script identified the search box, entered the names of individual companies obtained from the manually downloaded list, and executed a search operation. Upon accessing the designated share data pages, the process continued as follows.
 
-3.  Accessing Historical Data:
+3. Accessing Historical Data:
    - Once on the specific share's data page, the automation script identified and interacted with the 'Historical Data' tab. This tab provided access to the historical performance metrics of the chosen share.
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/2559210c-cabe-4323-9a88-702dc0fc2e94)
 
-4.  Selecting Time Span:
+4. Selecting Time Span:
    - The automation tool interacted with the drop-down menu to select the desired time span, enabling customization of the data extraction process. A specific time frame, such as 5 years, was chosen to gather comprehensive historical data for analysis.
 ![image](https://github.com/Prakash-Khatri/Nifty50_stock_price_preddiction_model/assets/133597202/c280a8c9-d334-4b0c-a376-2884313df1d0)
 
