@@ -150,4 +150,4 @@ ML models can assist in optimizing investment portfolios. By considering multipl
 
 ---
 
-##### _*For the purpose of loading the data from pickle library the data has to be passes with few steps mentioned in the notebook_
+##### _*For the purpose of loading the data from pickle library the data has to be passed with few steps mentioned in the notebook_
